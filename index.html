@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        background-color:rgba(38, 78, 202, 1);
+      }
+      .card {
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .input-field input {
+        background-color: #f0f0f0;
+        border-radius: 4px;
+      }
+      .input-field label {
+        font-size: 14px;
+        color: #757575;
+      }
+      .input-field .toggle-password {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .forgot-password {
+        font-size: 12px;
+        color: #757575;
+        margin-top: 5px;
+        display: block;
+      }
+      .btn {
+        background-color: #0033cc;
+        width: 100%;
+        text-transform: none;
+        margin-top: 20px;
+      }
+      .input {
+        width: 98% !important;
+        height: 40px !important;
+        padding-left: 10px !important;
+        background-color: #f0f0f0 !important;
+        border-bottom: none !important;
+        border-radius: 9px !important;
+      }
+      .input::placeholder {
+        margin-left: 60px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="margin-top: 100px">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card">
+            <h6 class="center-align">
+              Please fill in your unique admin login details below
+            </h6>
+            <form style="margin-top: 30px">
+              <div for="email">Email address</div>
+              <div class="input-field">
+                <input class="input" id="email" type="email" required />
+              </div>
+              <div for="password">Password</div>
+              <div class="input-field" style="position: relative">
+                <input class="input" id="password" type="password" required />
+                <i class="material-icons toggle-password" id="toggle-password">
+                  visibility_off
+                </i>
+              </div>
+              <a href="#" class="forgot-password right-align">forgot password?</a>
+              <button type="submit" class="btn waves-effect waves-light" id="blog__button__item">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script> 
+ 
+        
+        const button = document.getElementById('blog__button__item');
+        button.addEventListener('click', function() {
+            document.body.style.backgroundColor = 'black';
+            button.style.backgroundColor = 'black';
+        });
+        
+   
+            
+           </script>
+  </body>
+</html>
